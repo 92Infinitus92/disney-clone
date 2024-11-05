@@ -22,7 +22,6 @@ function MoviesCaroussel({ title, movies, isVertical }: Props) {
 
   return (
     <div className="z-50">
-      <h2>{title}</h2>
       <div className="relative">
         {!isVertical && (
           <>
@@ -54,7 +53,7 @@ function MoviesCaroussel({ title, movies, isVertical }: Props) {
           className={cn(
             "flex space-x-4 overflow-x-scroll px-5 lg:px-10 py-5",
             isVertical
-              ? "flex-col space-x-0 space-y-12 overflow-y-scroll"
+              ? "flex-col space-x-0 space-y-12 overflow-y-scroll scrollbar-hide"
               : "scrollbar-hide"
           )}
         >
