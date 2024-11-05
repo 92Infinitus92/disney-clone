@@ -26,10 +26,9 @@ function SearchInput() {
     },
   });
   function onSubmit(values: z.infer<typeof searchSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
     console.log(values);
     router.push(`/search/${values.searchTerm}`);
+    form.reset();
   }
   return (
     <Form {...form}>
@@ -40,14 +39,13 @@ function SearchInput() {
           render={({ field }) => (
             <FormItem>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="Search..." {...field} />
               </FormControl>
 
               <FormMessage />
             </FormItem>
           )}
         />
-        <Button type="submit">Submit</Button>
       </form>
     </Form>
   );
