@@ -6,7 +6,7 @@ async function CarousselBannerWrapper({
   id,
   keywords,
 }: {
-  id: string;
+  id?: string;
   keywords?: string;
 }) {
   const movies = await getDiscoverMovies(id, keywords);
