@@ -25,10 +25,7 @@
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.53.1",
     "tailwind-merge": "^2.5.4",
-<<<<<<< HEAD
-=======
     "tailwind-scrollbar-hide": "^1.1.7",
->>>>>>> 3121c5a8c4119efe88f85a2cf74e9e128bcc1a8b
     "tailwindcss-animate": "^1.0.7",
     "zod": "^3.23.8"
   },
