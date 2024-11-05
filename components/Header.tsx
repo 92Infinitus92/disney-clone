@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ThemeToggler } from "./ThemeToggler";
-import SearchInput from "./SearchInput";
 import GenreDropdown from "./GenreDropdown";
+import SearchInput from "./SearchInput";
 
 function Header() {
   return (
