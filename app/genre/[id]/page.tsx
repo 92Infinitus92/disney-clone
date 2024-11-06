@@ -1,5 +1,6 @@
 import MoviesCaroussel from "@/components/MoviesCaroussel";
 import { getDiscoverMovies } from "@/lib/getMovies";
+import { getMovieSuggestions } from "@/lib/getMovieSuggestions";
 import { notFound } from "next/navigation";
 
 interface Props {
@@ -13,6 +14,7 @@ async function GenreSearchPage({ params, searchParams }: Props) {
   if (!params.id) notFound();
   const { id } = params;
   const movies = await getDiscoverMovies(id);
+  // const suggestions = await getMovieSuggestions(searchParams.genre);
   return (
     <div className="max-w-7xl mx-auto">
       <div className="flex flex-col space-y-5 mt-32 xl:mt-42">
